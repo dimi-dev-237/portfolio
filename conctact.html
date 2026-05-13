@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Dimitri Fosso</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container navbar">
+
+      <div class="logo">
+        DIMITRI<span>.</span>
+      </div>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="realisations.html">Realisations</a></li>
+          <li><a href="#" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <p>CONTACTEZ-MOI</p>
+        <h1>Discutons de votre projet</h1>
+
+        <span>
+          Une idée, un projet ou une collaboration ?
+          Envoyez-moi un message et je vous répondrai rapidement.
+        </span>
+      </div>
+
+      <div class="contact-container">
+
+        <!-- FORMULAIRE -->
+        <div class="contact-card form-card">
+
+          <h2>Envoyer un message</h2>
+
+          <form class="contact-form">
+
+            <div class="input-group">
+              <input type="text" placeholder="Votre nom" required>
+            </div>
+
+            <div class="input-group">
+              <input type="email" placeholder="Votre email" required>
+            </div>
+
+            <div class="input-group">
+              <input type="text" placeholder="Sujet">
+            </div>
+
+            <div class="input-group">
+              <textarea placeholder="Votre message..." rows="7" required></textarea>
+            </div>
+
+            <button type="submit">
+              Envoyer le message
+            </button>
+
+          </form>
+
+        </div>
+
+        <!-- INFOS -->
+        <div class="contact-card info-card">
+
+          <h2>Mes informations</h2>
+
+          <div class="info-item">
+            <i class="fa-solid fa-user"></i>
+
+            <div>
+              <h4>Nom</h4>
+              <p>DIMITRI FOSSO</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+
+            <div>
+              <h4>Email</h4>
+              <p>fossodimitri79@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+
+            <div>
+              <h4>Téléphone</h4>
+              <p>+237 687 16 43 11</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+              <h4>Adresse</h4>
+              <p>Douala, Cameroun</p>
+            </div>
+          </div>
+
+          <!-- SOCIALS -->
+          <div class="socials">
+
+            <a href="#">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+          </div>
+
+          <!-- MAP -->
+          <div class="map-container">
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.9100000000003!2d9.7043!3d4.0511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10611a0000000000%3A0x0000000000000000!2sDouala%2C%20Cameroon!5e0!3m2!1sfr!2scm!4v0000000000000"
+              loading="lazy">
+            </iframe>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- JS -->
+  <script>
+    
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+  </script>
+
+</body>
+</html>

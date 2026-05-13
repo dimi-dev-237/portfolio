@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mes Réalisations | Dimitri Dev</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="realisations.css">
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="container navbar">
+
+      <div class="logo">
+        DIMITRI<span>.</span>
+      </div>
+
+      <nav>
+
+        <ul class="nav-links" id="navLinks">
+
+          <li><a href="index.html">Accueil</a></li>
+
+          <li><a href="#" class="active">
+            Réalisations
+          </a></li>
+
+          <li><a href="conctact.html">Contact</a></li>
+
+        </ul>
+
+      </nav>
+
+      <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="projects-hero">
+
+    <div class="container">
+
+      <p class="section-subtitle">
+        MON PORTFOLIO
+      </p>
+
+      <h1>
+        Mes Réalisations
+      </h1>
+
+      <span>
+        Découvrez quelques projets web et applications
+        que j’ai conçus récemment.
+      </span>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section">
+
+    <div class="container">
+
+      <div class="projects-grid">
+
+        <!-- CARD -->
+        <div class="project-card">
+
+          <div class="project-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+
+          <h3>DIENEST SERVICES</h3>
+
+          <p>
+            Application web permettant de mettre en relation
+            des techniciens et des clients selon leur localité.
+          </p>
+
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <a href="#" class="project-btn">
+            Voir le projet
+          </a>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="project-card featured-card">
+
+          <div class="project-icon">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+
+          <h3>Annuaire Pro</h3>
+
+          <p>
+            Plateforme web conçue pour les PME permettant
+            le suivi en temps réel des activités des employés.
+          </p>
+
+          <div class="project-tags">
+            <span>Frontend</span>
+            <span>Responsive</span>
+            <span>UI/UX</span>
+          </div>
+
+          <a href="https://formulaire-nv0ou2z08-dimi-dev-237s-projects.vercel.app/"
+             class="project-btn"
+             target="_blank">
+
+            Voir le projet
+
+          </a>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="project-card">
+
+          <div class="project-icon">
+            <i class="fa-solid fa-school"></i>
+          </div>
+
+          <h3>Class Manager</h3>
+
+          <p>
+            Plateforme permettant à un institut supérieur
+            de gérer les salles et consulter les emplois du temps.
+          </p>
+
+          <div class="project-tags">
+            <span>Management</span>
+            <span>Web App</span>
+            <span>Planning</span>
+          </div>
+
+          <a href="#" class="project-btn">
+            Voir le projet
+          </a>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="project-card">
+
+          <div class="project-icon">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+
+          <h3>Soft Services</h3>
+
+          <p>
+            Application professionnelle permettant
+            à Soft Express de gérer efficacement sa clientèle.
+          </p>
+
+          <div class="project-tags">
+            <span>Dashboard</span>
+            <span>CRM</span>
+            <span>Business</span>
+          </div>
+
+          <a href="#" class="project-btn">
+            Voir le projet
+          </a>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="project-card">
+
+          <div class="project-icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+
+          <h3>Business Tracker</h3>
+
+          <p>
+            Solution web moderne permettant de suivre
+            les performances et statistiques d’une entreprise.
+          </p>
+
+          <div class="project-tags">
+            <span>Analytics</span>
+            <span>Admin</span>
+            <span>Charts</span>
+          </div>
+
+          <a href="#" class="project-btn">
+            Voir le projet
+          </a>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="project-card">
+
+          <div class="project-icon">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </div>
+
+          <h3>Mobile UI Concept</h3>
+
+          <p>
+            Prototype d’interface mobile moderne
+            conçu pour une expérience utilisateur premium.
+          </p>
+
+          <div class="project-tags">
+            <span>Mobile</span>
+            <span>Design</span>
+            <span>Prototype</span>
+          </div>
+
+          <a href="#" class="project-btn">
+            Voir le projet
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- JS -->
+  <script>
+
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+  </script>
+
+</body>
+</html>
